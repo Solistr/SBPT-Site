@@ -1,0 +1,56 @@
+<html>
+	<head>
+		<title>Super Smash Bros. Portugal</title>
+		<meta name="author" content="Miguel Rodrigues Carrilho Borges">
+		<meta name="description" content="Bem-vindo à página da comunidade portuguesa de Super Smash Bros.!">
+		<link rel="stylesheet" href="{{url_for('static', filename='css/index.css')}}">
+		<link rel="stylesheet" href="{{url_for('static', filename='css/language.css')}}">
+	</head>
+	<body>
+		<div class='language-selector'>
+			<button class='lang-btn'><b>Language</b></button>
+			<div class='lang-options'>
+				<a href="#"><img class="flag" src="{{url_for('static', filename='./images/pt.png')}}"></a>
+				<a href="#"><img class="flag" src="{{url_for('static', filename='./images/gb.png')}}"></a>
+			</div>
+		</div>
+		<div class='banner-div'>
+			<img class='banner' src="{{url_for('static', filename='./images/sbptheader.png')}}">
+		</div>
+		<div class="linkstable">
+			<div class="link">
+				<img class='link-img' src="{{url_for('static', filename='./images/teste.png')}}">
+				<h1>Torneios</h1>
+			</div>
+
+			<div class="link">
+				<img class='link-img' src="{{url_for('static', filename='./images/teste.png')}}">
+				<h1>PR</h1>
+			</div>
+			
+			<div class="link">
+				<img class='link-img' src="{{url_for('static', filename='./images/teste.png')}}">
+				<h1>Recursos</h1>
+			</div>
+			
+			<div class="link">
+				<img class='link-img' src="{{url_for('static', filename='./images/teste.png')}}">
+				<h1>Redes de media</h1>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="legal">
+				<p>Legales stuff para depois</p>
+			</div>
+
+			<div class="mediabox">
+				<a href="https://discord.gg/zKkNJgB"><img class="media" src="{{url_for('static', filename='./images/discord.png')}}"></a>
+				<a href="https://www.twitch.tv/smashbrosportugal"><img class="media" src="{{url_for('static', filename='./images/twitch.png')}}"></a>
+				<a href="https://www.youtube.com/channel/UCgseH6wdzh2Io1biQpIUrVA"><img class="media" src="{{url_for('static', filename='./images/youtube.png')}}"></a>
+				<a href="https://www.facebook.com/SmashBrosPortugal/"><img class="media" src="{{url_for('static', filename='./images/facebook.png')}}"></a>
+				<a href="https://twitter.com/smashbrospt"><img class="media" src="{{url_for('static', filename='./images/twitter.png')}}"></a>
+				<a href="https://www.instagram.com/smashbrospt/"><img class="media" src="{{url_for('static', filename='./images/instagram.png')}}"></a>
+			</div>
+		</div>
+	</body>
+</html>
