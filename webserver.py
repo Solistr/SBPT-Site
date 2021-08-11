@@ -1,7 +1,7 @@
 from flask import Flask, render_template, redirect, url_for, session
 
 app = Flask(__name__, template_folder='./pages/', static_folder='./pages/') 
-app.secret_key = "teste"
+app.secret_key = "gukV4&Ls6!"
 
 def checkLanguage():
     if not "lang" in session:
