@@ -11,16 +11,15 @@ def checkLanguage():
 
 @app.route("/")
 def index():
-    lang = checkLanguage();
+    lang = checkLanguage()
+    session["lastPage"] = "index"
     return render_template(lang + "/index.html")
 
-@app.route("/changeLanguage/")
-def change_language():
-    if session["lang"] == "pt":
-        session["lang"] = "en"
-    else:
-        session["lang"] = "pt"
-    return redirect(url_for("index"))
+@app.route("/setLanguage/<lang>")
+def change_language(lang):
+    if lang == "pt" or lang == "en":
+        session["lang"] = lang
+    return redirect(url_for(session["lastPage"]))
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0')
