@@ -21,6 +21,12 @@ def change_language(lang):
         session["lang"] = lang
     return redirect(url_for(session["lastPage"]))
 
+@app.route("/tournaments/")
+def tournaments():
+    lang = checkLanguage()
+    session["lastPage"] = "tournaments"
+    return render_template(lang + "/tournaments.html")
+
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0')

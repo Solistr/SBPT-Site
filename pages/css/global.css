@@ -21,6 +21,11 @@ html, body {
     grid-column-gap: 0.5vh;
     background-color: white;
     width: 100%;
+    margin: 0;
+}
+
+.menu a {
+    text-decoration: none;
 }
 
 .menu-option {

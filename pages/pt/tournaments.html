@@ -4,7 +4,7 @@
 		<meta name="author" content="Miguel Rodrigues Carrilho Borges">
 		<meta name="description" content="Bem-vindo à página da comunidade portuguesa de Super Smash Bros.!">
 		<link rel="stylesheet" href="{{url_for('static', filename='css/global.css')}}">
-		<link rel="stylesheet" href="{{url_for('static', filename='css/index.css')}}">
+		<link rel="stylesheet" href="{{url_for('static', filename='css/tournaments.css')}}">
 	</head>
 	<body>
         <div class="header">
@@ -17,6 +17,22 @@
             <div class="menu-option">REDES DE MEDIA</div>
             <div class="menu-option">KNOW THE PLAYERS</div>
             <div class="menu-option">RULESET</div>
+        </div>
+        <div class="offline">
+            <h1>Offline</h1>
+            <div class="offline-grid">
+                <img class="tournament" src="{{url_for('static', filename='./images/InvictaLogo.png')}}">
+                <img class="tournament" src="{{url_for('static', filename='./images/AVLogo.png')}}">
+                <img class="tournament" src="{{url_for('static', filename='./images/TDLXLogo.png')}}">
+            </div>
+        </div>
+        <div class="online">
+            <h1>Online</h1>
+            <div class="online-grid">
+                <img class="tournament" src="{{url_for('static', filename='./images/ASLogo.png')}}">
+                <img class="tournament" src="{{url_for('static', filename='./images/THLogo.png')}}">
+
+            </div>
         </div>
     </body>
 </html>
